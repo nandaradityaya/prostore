@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import Image from "next/image";
 import Link from "next/link";
 import ProductPrice from "./product-price";
-import Rating from "./rating";
+// import Rating from "./rating";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const ProductCard = ({ product }: { product: any }) => {
@@ -30,7 +30,7 @@ const ProductCard = ({ product }: { product: any }) => {
         </Link>
 
         <div className="flex-between gap-4">
-          <Rating value={Number(product.rating)} />
+          {/* <Rating value={Number(product.rating)} /> */}
 
           {product?.stock > 0 ? (
             <ProductPrice value={Number(product.price)} />
