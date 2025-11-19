@@ -1,6 +1,6 @@
-// import { z } from 'zod';
-// import {
-//   insertProductSchema,
+import { z } from 'zod';
+import {
+  insertProductSchema,
 //   insertCartSchema,
 //   cartItemSchema,
 //   shippingAddressSchema,
@@ -8,14 +8,14 @@
 //   insertOrderSchema,
 //   paymentResultSchema,
 //   insertReviewSchema
-// } from '@/lib/validators';
+} from '@/lib/validators';
 
-// export type Product = z.infer<typeof insertProductSchema> & {
-//   id: string;
-//   rating: string;
-//   numReviews: number;
-//   createdAt: Date;
-// };
+export type Product = z.infer<typeof insertProductSchema> & {
+  id: string;
+  rating: string;
+  numReviews: number;
+  createdAt: Date;
+};
 
 // export type Cart = z.infer<typeof insertCartSchema>;
 

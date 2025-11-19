@@ -5,8 +5,8 @@
 // Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
 
 generator client {
-  provider = "prisma-client"
-  output   = "../lib/generated/prisma"
+  provider = "prisma-client-js"
+  previewFeatures = ["driverAdapters"]
 }
 
 datasource db {
@@ -29,6 +29,4 @@ model Product {
   isFeatured  Boolean  @default(false)
   banner      String?
   createdAt   DateTime @default(now()) @db.Timestamp(6)
-  OrderItem   OrderItem[]
-  Review      Review[]
 }
