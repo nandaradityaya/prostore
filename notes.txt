@@ -19,8 +19,8 @@ https://pris.ly/d/getting-started
 
 --------------------------------------------------------
 
-Migrate:
-npx prisma migrate dev --name init
+4. Migrate:
+npx prisma migrate dev --name init | init atau nama migrate contoh add_user_based_tables
 
 Open Studio (DBMS):
 npx prisma studio
